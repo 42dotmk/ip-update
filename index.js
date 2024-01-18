@@ -16,12 +16,7 @@ config({ path: env });
 
 const resolveIp = async () => {
     const ipSources = [
-        "http://ifconfig.io/ip",
-        "http://ifconfig.co/ip",
-        "http://ipecho.net/plain",
-        "http://icanhazip.com/",
-        "http://ident.me/",
-        "http://whatismyip.akamai.com/",
+        "http://echo.42.mk:8099/ip",
     ];
     
     for (const source of ipSources) {
